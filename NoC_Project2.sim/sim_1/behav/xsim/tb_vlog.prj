@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NoC_Project2.srcs/sources_1/imports/Desktop/add.v" \
+"../../../../NoC_Project2.srcs/sources_1/imports/Desktop/div2.v" \
+"../../../../NoC_Project2.srcs/sources_1/imports/Desktop/openNocTop.v" \
+"../../../../NoC_Project2.srcs/sources_1/imports/Desktop/sub.v" \
+"../../../../NoC_Project2.srcs/sources_1/imports/Desktop/switch.v" \
+
+sv xil_defaultlib  \
+"../../../../NoC_Project2.srcs/sim_1/imports/Desktop/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
